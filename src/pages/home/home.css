@@ -1,0 +1,131 @@
+.homepage {
+  max-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-title {
+  padding-top: 48px;
+  font-family: "Sacramento", cursive;
+  font-size: 96px;
+  font-weight: 500;
+}
+
+.hp-photo-container {
+  background-color: var(--primary);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+}
+
+.homepage-photo {
+  height: 680px;
+  position: absolute;
+  bottom: 40px;
+  left: -60px;
+}
+
+.travel-btn {
+  position: absolute;
+  bottom: 80px;
+  z-index: 10;
+  right: -40px;
+  animation-delay: 500ms;
+}
+
+.overreacted-btn {
+  position: absolute;
+  bottom: 360px;
+  z-index: 10;
+  right: -80px;
+}
+
+.about-btn {
+  position: absolute;
+  bottom: 520px;
+  z-index: 10;
+  left: -30px;
+  animation-delay: 1s;
+}
+
+.hp-floating-btn {
+  padding: 4px 24px;
+  border-radius: 12px;
+  background-color: var(--white);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.hp-btn-lottie {
+  height: 40px;
+  width: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .homepage-title {
+    font-size: 84px;
+    padding-top: 40px;
+  }
+  .hp-photo-container {
+    width: 500px;
+    height: 500px;
+    bottom: -40px;
+  }
+
+  .homepage-photo {
+    height: 580px;
+    bottom: 40px;
+    left: -60px;
+  }
+  .hp-btn-lottie {
+    height: 25px;
+  }
+  .hp-floating-btn {
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .homepage-title {
+    font-size: 36px;
+    padding-top: 40px;
+  }
+  .hp-photo-container {
+    width: 300px;
+    height: 300px;
+    bottom: 40px;
+  }
+
+  .homepage-photo {
+    height: 420px;
+    bottom: -40px;
+    left: -80px;
+  }
+  .hp-btn-lottie {
+    height: 25px;
+  }
+  .hp-floating-btn {
+    padding: 12px;
+  }
+  .travel-btn {
+    bottom: 130px;
+  }
+  .about-btn {
+    bottom: 320px;
+    left: -60px;
+  }
+  .overreacted-btn {
+    bottom: 8px;
+    right: -24px;
+  }
+  .hp-btn-lottie {
+    height: 20px;
+  }
+}
