@@ -10,7 +10,7 @@ const HomePage = () => {
     <div className="homepage max-width">
       <div className="homepage-title absolute-center tracking-in-expand">
         {LogoIcon}
-        Shuvam Kumar
+        becomingSushi_chef
       </div>
       <div className="hp-photo-container">
         <img src={shuvamPhoto} className="homepage-photo" alt="Shuvam Kumar" />
